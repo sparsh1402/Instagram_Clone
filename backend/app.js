@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const PORT = 5000;
 const mongoose = require('mongoose');
-const mongoUrl = require("./keys");
+const { mongoUrl } = require("./keys");
 require('./models/model');
 app.use(express.json());
 app.use(require("./routes/auth"));  //we can run middleware function in app.use.....
